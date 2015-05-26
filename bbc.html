@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+<head>
+ <title>Ralph's BBC</title>
+ <meta charset="utf-8" />
+ <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<style type="text/css">
+
+	body {
+		margin: -14px;
+	}
+
+	#topbar {
+		background-color: #FFFFFF;
+		width: 100%;
+		height: 40px;
+		margin: -1px;
+		border-bottom: 1px #D1D1D1 solid;
+
+	}
+ 	
+
+	#sign-in {
+		float: left;
+		padding-top: 11px;
+		padding-left: 16px;
+		padding-right: 80px;
+		padding-bottom: 3px;
+		border-right: 1px #D1D1D1 solid;
+		border-bottom: 1px #D1D1D1 solid;
+
+	}
+
+	.fixedwidth {
+		width: 1005px;
+		margin: 0 auto;
+		/*background-color: yellow;*/
+		
+	}
+
+	#logo {
+		float: left;
+		padding-top: 8px;
+		padding-left: 5px;
+		padding-right: 8px;
+		border-right: 1px #D1D1D1 solid;
+		border-bottom: 1px #D1D1D1 solid;
+	}	
+	
+
+	#topbar a:link {
+		font-family: Verdana, helvetica, arial, sans-serif;
+		text-decoration: none;
+		font-weight: bold;
+		color: #000000;
+		font-size: 83%;
+	}
+	
+	#topbar a:hover {
+		font-family: Verdana, helvetica, arial, sans-serif;
+		text-decoration: none;
+		color: #FF00FF;
+		font-weight: bold;
+	}
+	#topbar a:active {
+		font-family: Verdana, helvetica, arial, sans-serif;
+		text-decoration: none;
+		color: #0000FF;
+		font-weight: bold;
+	}
+
+	.link-text {		
+		padding-left: 6px;
+		position: relative;
+		top: -3px;
+	}
+
+	#topmenu {
+		/*float: left;*/
+		/*border-bottom: 2px #D1D1D1 solid; */
+	}
+
+	#topmenu ul {
+
+	}
+
+	#topmenu li {
+		float: left;
+		list-style: none;
+		font-weight: bold;
+		font-size: 0.9em;
+		border-right: 1px #D1D1D1 solid;
+		/*border-bottom: 2px #D1D1D1 solid; */
+		padding: 10px 20px 12px 20px;
+	}
+	#searchdiv {
+		float: left;
+		padding: 8px;
+	}
+
+	#searchdiv input {
+		height: 23px;
+		width: 178px;
+		color: black;
+		padding-left: 10px;
+		padding-right: 2px;
+		background-color: #DFDFDF;
+		border: none;
+		background-image:url("images/orb-search-dark.png");
+		background-repeat: no-repeat;
+		background-position: 170px 4px;
+
+	}
+
+	::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #000000;
+    font-weight: bold;
+	}
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	   color:    #000000;
+	   font-weight: bold;
+	   opacity:  1;
+	}
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+	   color:    #000000;
+	   font-weight: bold;
+	   opacity:  1;
+	}
+	:-ms-input-placeholder { /* Internet Explorer 10+ */
+	   color:    #000000;
+	   font-weight: bold;
+	}
+
+	
+
+	#newsbar {
+		background-color: #CC0101;
+		width: 100%;
+		height: 60px;
+		color: #FFFFFF;
+		font-family: Arial;
+		padding-top: 3px;
+		padding-bottom: 1px;
+		padding-left: 5px;
+		margin: 0;
+		position: relative;
+		top: -3px;
+		border-top: 1px #D1D1D1 solid; 
+		border-bottom: 1px #DA4C4C solid;
+ 
+	}
+
+	#news-logo{
+		margin-top: 15px;
+	}	
+
+	#nav2 {
+			background-color: #CC0101;
+			width: 100%;
+			height: 40px;
+			color: #FFFFFF;
+			font-family: Verdana, helvetica, arial, sans-serif;
+			padding-top: 3px;
+			padding-bottom: 1px;
+			padding-left: 5px;
+			margin: 0;
+			position: relative;
+			top: -3px;
+			border-top: 1px #DA4C4C solid; 
+			border-bottom: 2px #DA4C4C solid;	 
+	}
+
+	.break {
+		clear: both;
+	}
+
+	#nav2-menu {
+		margin-left: -56px;
+	}
+
+	
+	#nav2-menu li {
+		float: left;
+		list-style: none;
+		color: white;
+		border-right: 1px #FFFFFF solid;
+		padding: 0 15px 12px 15px;
+	}
+
+	#nav2-menu a:link {		
+		font-family: Tahoma, Geneva, sans-serif;
+		color: #FFFFFF;		
+		text-decoration: none;
+		font-size: 0.9em;		
+		
+		}
+	#nav2-menu a:hover {
+		font-family: Tahoma, Geneva, sans-serif;
+		text-decoration: none;
+		color: #FF00FF;
+		font-weight: bold;
+	}
+	#nav2-menu a:active {
+		font-family: Tahoma, Geneva, sans-serif;
+		text-decoration: none;
+		color: #0000FF;
+		font-weight: bold;
+	}
+	
+
+
+		
+
+
+</style>
+
+	<body>
+
+		<div id="container">
+
+			<div id="topbar">
+				<div class="fixedwidth">
+						<div id="logo">
+							<img src="images/bbc-blocks-dark.png" />
+						</div>
+
+						<div id="sign-in">
+							<img src="images/bbcid_orb_signin_dark.png" />
+							<a href="https://ssl.bbc.com/id/signin?ptrt=http%3A%2F%2Fwww.bbc.com%2Fnews%2Fuk" ><span class="link-text">Sign in</span></a>
+						</div>
+
+						<div id="topmenu">
+							<ul>
+								<li><a href="#">News</li>
+								<li><a href="#">Sport</li>
+								<li><a href="#">Weather</li>
+								<li><a href="#">Shop</li>
+								<li><a href="#">Earth</li>
+								<li><a href="#">Travel</li>
+								<li><a href="#">More...</li>
+							</ul>
+						</div>
+
+						<div id="searchdiv">
+								<input type="text" placeholder="Search" />
+						</div>
+				</div>					
+			</div>
+
+			<!-- <div class="break"></div> -->
+
+			<div id="newsbar">
+				<div class="fixedwidth">
+					<div id="news-logo">
+				 		<img src="images/news.png" 	width="120" height="30" />
+					</div>				
+				</div>
+			</div>
+
+			<div class="break"></div>
+
+			<div id="nav2">				
+				<div class="fixedwidth">					
+					<div id="nav2-menu">
+							<ul>
+								<li><a href="#">Home</li>
+								<li><a href="#">Video</li>
+								<li><a href="#">World</li>
+								<li><a href="#">US & Canada</li>
+								<li><a href="#">UK</li>
+								<li><a href="#">Business</li>
+								<li><a href="#">Tech</li>
+								<li><a href="#">Science</li>
+								<li><a href="#">Magazine</li>
+								<li><a href="#">Entertainment & Arts</li>
+								<li><a href="#">Health</li>
+								<li><a href="#">More...</li>
+							</ul>
+						</div>
+				</div>				
+			</div>
+
+
+
+		</div>
+
+
+
+	</body>
+</html>
